@@ -1,2 +1,14 @@
+.holder {
+  display: flex;
+  justify-content: space-between; /* space between elements, first & last touch edges */
+  flex-wrap: wrap; /* allow items to move to next row if overflow */
+}
 
-/* Your CSS Code here. */
+.item {
+  flex: 0 0 auto; /* prevent shrinking/squashing of items */
+  padding: 10px;
+  background-color: lightblue;
+  margin: 5px 0; /* optional: vertical spacing between rows */
+  text-align: center;
+  border: 1px solid #000;
+}
