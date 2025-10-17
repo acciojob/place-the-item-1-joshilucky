@@ -1,14 +1,14 @@
 .holder {
   display: flex;
-  justify-content: space-between; /* space between elements, first & last touch edges */
-  flex-wrap: wrap; /* allow items to move to next row if overflow */
+  justify-content: space-between; /* even space between items, first & last touch edges */
+  flex-wrap: wrap; /* move to next row if more items added */
 }
 
 .item {
-  flex: 0 0 auto; /* prevent shrinking/squashing of items */
-  padding: 10px;
+  flex: 0 0 auto; /* prevent squashing */
   background-color: lightblue;
-  margin: 5px 0; /* optional: vertical spacing between rows */
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: 1px solid black;
   text-align: center;
-  border: 1px solid #000;
 }
